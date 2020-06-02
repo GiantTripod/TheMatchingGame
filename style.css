@@ -14,9 +14,14 @@ body {
 .grid {
   max-width: 960px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .card {
@@ -41,7 +46,7 @@ body {
 
 .front {
   z-index: 2;
-  background: #FAB942 url('../img/question.gif') no-repeat center center / contain;
+  background: #FAB942 no-repeat center center / contain;
 }
 
 .back {
